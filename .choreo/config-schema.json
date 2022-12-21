@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "yashodperera": {
+      "type": "object",
+      "properties": {
+        "sfdc_new_account_to_netsuite_customer": {
+          "type": "object",
+          "properties": {
+            "salesforceListenerConfig": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "username",
+                "password"
+              ],
+              "name": "yashodperera/sfdc_new_account_to_netsuite_customer:1.0.1:SalesforceListenerConfig",
+              "description": ""
+            },
+            "salesforceOAuthConfig": {
+              "type": "object",
+              "properties": {
+                "clientId": {
+                  "type": "string"
+                },
+                "clientSecret": {
+                  "type": "string"
+                },
+                "refreshToken": {
+                  "type": "string"
+                },
+                "refreshUrl": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "clientId",
+                "clientSecret",
+                "refreshToken",
+                "refreshUrl"
+              ],
+              "name": "yashodperera/sfdc_new_account_to_netsuite_customer:1.0.1:SalesforceOAuthConfig",
+              "description": ""
+            },
+            "salesforceBaseUrl": {
+              "type": "string",
+              "description": ""
+            },
+            "netsuiteClientConfig": {
+              "type": "object",
+              "properties": {
+                "accountId": {
+                  "type": "string"
+                },
+                "consumerId": {
+                  "type": "string"
+                },
+                "consumerSecret": {
+                  "type": "string"
+                },
+                "token": {
+                  "type": "string"
+                },
+                "tokenSecret": {
+                  "type": "string"
+                },
+                "baseURL": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "accountId",
+                "consumerId",
+                "consumerSecret",
+                "token",
+                "tokenSecret",
+                "baseURL"
+              ],
+              "name": "ballerinax/netsuite:2.2.1:ConnectionConfig",
+              "description": ""
+            },
+            "netsuiteSubsidiaryID": {
+              "type": "string",
+              "description": ""
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "salesforceListenerConfig",
+            "salesforceOAuthConfig",
+            "salesforceBaseUrl",
+            "netsuiteClientConfig",
+            "netsuiteSubsidiaryID"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
